@@ -19,14 +19,14 @@ class DevelomentConfig(Config):
         TESTING = True
         DEBUG = True
         IP_HOST = 'localhost' # Aqui geralmente é um IP de um servidor na nuvem e não o endereço da máquina local
-        POST_HOST = 5000
+        PORT_HOST = 5000
         URL-MAIN =  'http://%s:%s/' % (IP_HOST, PORT_HOST)
 
     class ProductionConfig(Config):
         DEBUG = False
         TESTING = False
         IP_HOST =   'localhost'  # Aqui geralmente é um IP de um servidor na nuvem e não o endereço da máquina local
-        POST_HOST = 8080
+        PORT_HOST = 8080
         URL_MAIN ='http://%s:%s/' % (IP_HOST, PORT_HOST)
 
     app_config = {
